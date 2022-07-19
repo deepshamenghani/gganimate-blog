@@ -146,7 +146,7 @@ plot_usa_population_map <- function(data) {
 }
 
 ## Plot map for single year ----
-usa_population_map_single_year <- plot_usa_population_map(data = population_dataset_lat_long %>% filter(Year %in% (1910)))
+usa_population_map_single_year <- plot_usa_population_map(data = population_dataset_lat_long %>% filter(Year %in% (2020)))
 
 ggplotly(usa_population_map_single_year, tooltip = "text")
 
